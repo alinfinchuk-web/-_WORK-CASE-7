@@ -5,7 +5,7 @@ PERFORMANCE REPORT
 
  Discipline: "Operating Systems" 
 Performed by students of Group CSN-33 (Computer Systems and Networks).: 
-Finchuk Alina Oleksiivna
+Finchuk Alina Oleksiivna and 
 Kuznetsov Artur Serhiyovych
 ________________ 
 
