@@ -5,11 +5,56 @@ PERFORMANCE REPORT
 
  Discipline: "Operating Systems" 
 Performed by students of Group CSN-33 (Computer Systems and Networks).: 
-Finchuk Alina Oleksiivna  
+Finchuk Alina Oleksiivna
+Kuznetsov Artur Serhiyovych
 ________________ 
 
 Checked by: 
 Suchanova Victoria Sergiivna
+
+
+
+| **English term**          | **Переклад українською**     | **Пояснення**                                                                       |
+| ------------------------- | ---------------------------- | ----------------------------------------------------------------------------------- |
+| Performance report        | Звіт про виконання           | Офіційний звіт щодо виконаної роботи в рамках навчальної дисципліни.                |
+| Operating system (OS)     | Операційна система           | Програмне забезпечення, що керує апаратними ресурсами та забезпечує роботу програм. |
+| Task scheduling           | Планування задач             | Створення і запуск завдань за розкладом.                                            |
+| Task scheduler            | Планувальник завдань         | Система, що автоматично запускає задачі в певний час або за подіями.                |
+| Scheduled task            | Заплановане завдання         | Дія або програма, яка запускається за розкладом.                                    |
+| Event-based trigger       | Тригер на основі подій       | Подія, яка запускає певну задачу (вхід у систему, підключення пристрою).            |
+| Backup                    | Резервне копіювання          | Створення копії важливих файлів або каталогів.                                      |
+| Archiving                 | Архівування                  | Процес стиснення або упаковки файлів у один архів.                                  |
+| Temporary directory       | Тимчасовий каталог           | Каталог для тимчасових файлів (наприклад, /tmp у Linux).                            |
+| Log file                  | Лог-файл                     | Файл, що містить системні журнали або повідомлення.                                 |
+| System log                | Системний лог                | Запис подій системи, використовується для діагностики.                              |
+| Linux Cron                | Планувальник Cron (Linux)    | Стандартний планувальник задач у Linux, що працює через crontab.                    |
+| Crontab                   | Таблиця задач Cron           | Файл із розкладом команд користувача.                                               |
+| Cron daemon (crond)       | Деймон Cron                  | Фоновий процес, який виконує задачі за розкладом.                                   |
+| Cron expression           | Cron-вираз                   | Формат запису часу виконання задачі з 5 або 6 полів.                                |
+| Reboot trigger (@reboot)  | Тригер при перезавантаженні  | Спеціальний тег для запуску задачі після старту системи.                            |
+| System maintenance        | Системне обслуговування      | Оновлення, очищення, діагностика, ротація логів і т.п.                              |
+| Package update            | Оновлення пакетів            | Оновлення програмного забезпечення через менеджер пакунків.                         |
+| Systemd                   | Systemd                      | Система ініціалізації та керування службами у сучасних Linux.                       |
+| Systemd-timer             | Таймер systemd               | Альтернативний планувальник задач на базі systemd.                                  |
+| Timer unit                | Одиниця таймера              | Конфігураційний файл systemd з розкладом запуску (.timer).                          |
+| Service unit              | Сервісний юніт               | Файл, що описує службовий процес (.service).                                        |
+| Persistent timer          | Сталий / наполегливий таймер | Таймер, що запускає пропущені задачі після вимкнення системи.                       |
+| Journalctl                | Journalctl                   | Інструмент для перегляду журналів systemd.                                          |
+| Virtual machine           | Віртуальна машина            | Програмне середовище, яке емулює комп’ютер.                                         |
+| Automation                | Автоматизація                | Процес виконання задач без участі користувача.                                      |
+| Time interval             | Часовий інтервал             | Проміжок часу, коли виконуються задачі (наприклад, 8–18).                           |
+| File removal              | Видалення файлів             | Операція очищення або видалення даних.                                              |
+| System reboot             | Перезавантаження системи     | Повторний запуск операційної системи.                                               |
+| System startup            | Запуск системи               | Момент, коли система починає свою роботу після увімкнення.                          |
+| Log rotation              | Ротація логів                | Автоматичне очищення або перенесення старих лог-файлів.                             |
+| XML format                | Формат XML                   | Формат зберігання даних у Windows Task Scheduler.                                   |
+| Graphical interface (GUI) | Графічний інтерфейс          | Інтерфейс із вікнами та кнопками.                                                   |
+| Terminal                  | Термінал                     | Текстовий інтерфейс у Linux для введення команд.                                    |
+| System service            | Системна служба              | Фоновий процес, що виконує завдання операційної системи.                            |
+| Hourly execution          | Щогодинне виконання          | Запуск задачі кожну годину.                                                         |
+| Daily execution           | Щоденне виконання            | Запуск задачі раз на день.                                                          |
+| Annual execution          | Щорічне виконання            | Запуск задачі раз на рік.                                                           |
+
 
 
 1. В ході роботи досить часто виникає завдання планування задач:
@@ -115,7 +160,7 @@ sudo systemctl start cleanup.timer
 Таймер автоматично запускає службу очищення о 8:00 щодня.
 Його перевага — логування через journalctl, можливість гнучких умов та більш точний контроль.
 
- Conclusion
+ Conclusion Finchuk Alina Oleksiivna  
 Task scheduling is a crucial part of any operating system, ensuring that repetitive and time-sensitive
 operations are executed automatically and reliably. In this work, the Cron scheduler was configured to
 perform various automated tasks such as cleaning temporary directories, creating backups, and system
@@ -123,3 +168,7 @@ maintenance at predefined times. Additionally, an alternative solution — syste
 providing advanced control, persistent execution, and integrated logging via journalctl.
 Through this comparison, it became evident that Cron remains a simple and effective tool for routine automation,
 while systemd-timer offers a more modern and flexible approach suitable for complex system management tasks.
+
+Conclusion Kuznetsov Artur Serhiyovych
+During this assignment, I explored task scheduling mechanisms in both Windows and Linux. The comparison showed that the Windows Task Scheduler provides a convenient graphical interface, while cron in Linux offers more flexibility and control due to text-based configuration. I also configured several cron jobs and examined the functionality of systemd timers. This work strengthened my understanding of automation and system administration in Linux.
+
