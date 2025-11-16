@@ -1,6 +1,6 @@
 Kyiv College of Communications  
 PERFORMANCE REPORT 
-СРС WORK CASE No. 6
+СРС WORK CASE No. 7
  
 
  Discipline: "Operating Systems" 
